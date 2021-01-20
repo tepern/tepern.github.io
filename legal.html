@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Политика в отношении обработки персональных данных клиентов</title> 
+        <link rel='stylesheet' href='lib.css'>
+        <link rel='stylesheet' href='main.css'>
+        <script src="./src/lib/jquery.min.3.3.1.js"></script>
+        <script src="lib.js"></script>
+    </head>
+    <body class="legal">
+        <header class="header">
+            <div class="container container-flex header-container hidden-lg hidden-md hidden-sm hidden-xs">
+                <div class="header-left">
+                    <button class="header__btn header__btn_hidden">Каталог</button>
+                    <div class="header-catalog">
+                        <p class="header-catalog__title">Каталог<button class="header-catalog__close btn"></button></p>
+                        <div class="header-catalog-list">
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Букеты до 2500</a>
+                                </li>
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Лидеры продаж</a>
+                                </li>
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Воздушные шары</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Букеты</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Выпускной</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Любимой</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">С Днем Рождения</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Свидание</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Юбилей</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">14 февраля</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">На свадьбу</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Коллеге</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Мужчине</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Цветы</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Монобукеты</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Цветочные композиции</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Свадебная флористика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-cart">Корзина:<a class="header-cart__link" href="cart.html">3 товара</a></div>
+                </div>
+                <div class="header-logo">
+                    <a class="header__logo" href="/">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="header-socio">
+                        <a class="header-socio__link"><img src="images/viber.png" alt="viber"></a>
+                        <a class="header-socio__link" href=""><img src="images/vk.png" alt="vk"></a>
+                        <a class="header-socio__link"><img src="images/insta.png" alt="insta"></a>
+                    </div>
+                    <p class="header__phone">+7 960 372 19 30<br>
+                    +7 903 320 65 61</p>
+                    <a class="header__link">Заказать обратный звонок</a>
+                    <div class="call-request">
+                        <form class="call-request-form" name="call-request">
+                            <button type="button" class="call-request__close"></button>
+                            <div class="call-request-form-content">
+                                <div class="call-request__title text-center">Заказать<br>обратный звонок</div>
+                                <div class="call-request__item">
+                                    <input type="text" name="user-name" class="call-request__input" placehulder="Имя">
+                                </div>
+                                <div class="call-request__item">
+                                    <input type="text" name="user-phone" class="call-request__input" placehulder="Контактный телефон*">
+                                </div>
+                                <div class="call-request__item pl-25">
+                                    <input id="legal" name="legal" type="checkbox" class="call-request__checkbox" checked required>
+                                    <label class="call-request__label" for="legal">Даю согласие на передачу и обработку своих персональных данных</label>
+                                </div>
+                                <div class="call-request__item text-center">
+                                    <button type="submit" name="web_form_submit" class="btn btn_small call-request__btn mt--5 mb-15">Заказать звонок</button>
+                                </div>
+                            </div>
+                            <div class="call-request-form-success">
+                                <div class="call-request__title text-center mb-20">Спасибо за заявку!</div>
+                                <p class="call-request__text text-center mb-20">В ближайшее время мы с вами<br>свяжемся для уточнения деталей</p>
+                                <div class="call-request__item text-center">
+                                    <button type="button" class="btn btn_small call-request__btn call-request__btn_success">Спасибо, ожидаю</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile header-mobile_top container header-container hidden">
+                <div class="header-mobile__left">
+                    <button class="header-mobile__btn">Каталог</button>
+                </div>
+                <div class="header-mobile__right">
+                    <a class="header-mobile__cart" href="cart.html">0</a>
+                </div>
+            </div>
+            <div class="header-mobile header-mobile_bottom">
+                <div class="header-socio">
+                    <a class="header-socio__link"><img src="images/viber.png" alt="viber"></a>
+                    <a class="header-socio__link" href=""><img src="images/vk.png" alt="vk"></a>
+                    <a class="header-socio__link"><img src="images/insta.png" alt="insta"></a>
+                </div>
+                <div class="header-mobile-logo">
+                    <a class="header__logo" href="/">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header-mobile__right">
+                    <a class="header-mobile__phone" href="tel:+79603721930">+7 960 372 19 30</a>
+                    <a class="header-mobile__link">Обратный звонок</a>
+                    <div class="call-request">
+                        <form class="call-request-form" name="call-request">
+                            <button type="button" class="call-request__close"></button>
+                            <div class="call-request-form-content">
+                                <div class="call-request__title text-center">Заказать<br>обратный звонок</div>
+                                <div class="call-request__item">
+                                    <input type="text" name="user-name" class="call-request__input" placehulder="Имя">
+                                </div>
+                                <div class="call-request__item">
+                                    <input type="text" name="user-phone" class="call-request__input" placehulder="Контактный телефон*">
+                                </div>
+                                <div class="call-request__item pl-25">
+                                    <input id="agreement" name="agreement" type="checkbox" class="call-request__checkbox" checked required>
+                                    <label class="call-request__label" for="agreement">Даю согласие на передачу и обработку своих персональных данных</label>
+                                </div>
+                                <div class="call-request__item text-center">
+                                    <button type="submit" name="web_form_submit" class="btn btn_small call-request__btn mt--5 mb-15">Заказать звонок</button>
+                                </div>
+                            </div>
+                            <div class="call-request-form-success">
+                                <div class="call-request__title text-center mb-20">Спасибо за заявку!</div>
+                                <p class="call-request__text text-center mb-20">В ближайшее время мы с вами свяжемся для уточнения деталей</p>
+                                <div class="call-request__item text-center">
+                                    <button type="button" class="btn btn_small call-request__btn call-request__btn_success">Спасибо, ожидаю</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="header-catalog">
+                        <p class="header-catalog__title"><button class="header-catalog__close header-catalog__close_mobile btn"></button>Каталог</p>
+                        <div class="header-catalog-list">
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Букеты до 2500</a>
+                                </li>
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Лидеры продаж</a>
+                                </li>
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Воздушные шары</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group mb-0-sm mb-5-xs mt-0-sm mt-5-xs">
+                                    <a class="header-catalog__link header-catalog__link_group">Букеты</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Выпускной</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Любимой</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">С Днем Рождения</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Свидание</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Юбилей</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">14 февраля</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">На свадьбу</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Коллеге</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Мужчине</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group mb-0-sm mb-5-xs mt-0-sm mt-5-xs">
+                                    <a class="header-catalog__link header-catalog__link_group">Цветы</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Монобукеты</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Цветочные композиции</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group mb-0-sm mb-5-xs mt-0-sm mt-5-xs">
+                                    <a class="header-catalog__link header-catalog__link_group">Свадебная флористика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="section section_legal pt-0">
+                <div class="container">
+                    <div class="legal-content">
+                        <h4 class="h4 legal-title">Политика в отношении обработки персональных данных клиентов</h4>
+                        <p>1. Общие положения<br>
+                            1.1. Настоящее Положение разработано в соответствии с требованиями Федерального закона «О персональных данных» № 152-ФЗ. 
+                        <p>
+                            1.2. Настоящим Положением определяется порядок обращения с персональными данными покупателей-клиентов ИП Юнусов Н.А.  (далее – «Общество») на Сайте https://azalia73.ru  (далее – «Сайт»). 
+                        </p>
+                        <p>
+                            1.3. Настоящее Положение имеет своей целью определение порядка обработки и защиты персональных данных всех клиентов Общества, данные которых подлежат обработке, на основании полномочий Общества; обеспечение защиты прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну, а также установление ответственности должностных лиц, имеющих доступ к персональным данным, за невыполнение требований норм, регулирующих обработку и защиту персональных данных. 
+                        </p>
+                        <p>
+                            1.4. Общество обязано опубликовать или иным образом обеспечить неограниченный доступ к настоящей Политике обработки персональных данных в соответствии с ч. 2 ст. 18.1. № 152-ФЗ. 
+                        </p>
+                        <p>
+                            2. Основные понятия. Состав персональных данных клиентов<br> 
+                            2.1. Для целей настоящего Положения используются следующие основные понятия: 
+                        </p>
+                        <p> 
+                            персональные данные - любая информация, относящаяся прямо или косвенно к определенному или определяемому физическому лицу (субъекту персональных данных) (п. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ); 
+                        </p>
+                        <p>
+                            обработка персональных данных клиента - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных (п. 3 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ); 
+                        </p>
+                        <p>
+                            распространение персональных данных - действия, направленные на раскрытие персональных данных клиента неопределенному кругу лиц (п. 5 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ); 
+                        </p>
+                        <p>
+                            предоставление персональных данных - действия, направленные на раскрытие персональных данных клиента определенному лицу или определенному кругу лиц (п. 6 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ); 
+                        </p>
+                        <p>
+                            блокирование персональных данных - временное прекращение обработки персональных данных клиентов (за исключением случаев, если обработка необходима для уточнения персональных данных) (п. 7 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ); 
+                         </p>
+                         <p>       
+                            уничтожение персональных данных - действия, в результате которых становится невозможным восстановить содержание персональных данных в информационной системе персональных данных клиента и (или) в результате которых уничтожаются материальные носители персональных данных клиентов (п. 8 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ); 
+                        </p>
+                        <p>
+                            обезличивание персональных данных - действия, в результате которых становится невозможным без использования дополнительной информации определить принадлежность персональных данных конкретному лицу (п. 9 ст. 3 Федерального закона от 27.07.2006 N 152- ФЗ); 
+                        </p>
+                        <p>
+                            информация - сведения (сообщения, данные) независимо от формы их представления; 
+                        </p>
+                        <p>    
+                            документированная информация - зафиксированная на материальном носителе путем документирования информация с реквизитами, позволяющими определить такую информацию или ее материальный носитель. 
+                        </p>
+                        <p>
+                            3. Обработка персональных данных клиентов<br> 
+                            3.1. Источником информации обо всех персональных данных клиентов является непосредственно сами клиенты. 
+                        </p>
+                        <p>
+                            3.2. Обработка информации обо всех персональных данных клиентов осуществляется Обществом на основе следующих принципов: 
+                        <ul class="legal-list">
+                            <li>законности и справедливой основе;</li> 
+                            <li>ограничения обработки персональных данных достижением конкретных, заранее определенных и законных целей;</li> 
+                            <li>недопущения обработки персональных данных, несовместимой с целями сбора персональных данных;</li> 
+                            <li>недопущения объединения баз данных, содержащих персональные данные, обработка которых осуществляется в целях, несовместимых между собой;</li> 
+                            <li>обработки только тех персональных данных, которые отвечают целям их обработки; </li>
+                            <li>соответствия содержания и объема обрабатываемых персональных данных заявленным целям обработки; </li>
+                            <li>недопущения обработки персональных данных, избыточных по отношению к заявленным целям их обработки; </li>
+                            <li>обеспечения точности, достаточности и актуальности персональных данных по отношению к целям обработки персональных данных; </li>
+                            <li>уничтожения либо обезличивания персональных данных по достижении целей их обработки или в случае утраты необходимости в достижении этих целей, при невозможности устранения Обществом допущенных нарушений персональных данных, если иное не предусмотрено федеральным законом.</li> 
+                        </ul>
+                        <p>3.3. Общество производит обработку персональных данных клиентов при наличии хотя бы одного из следующих условий:</p> 
+                        <ul class="legal-list">
+                            <li>обработка персональных данных осуществляется с согласия субъекта персональных данных на обработку его персональных данных;</li> 
+                            <li>обработка персональных данных необходима для достижения целей, предусмотренных международным договором Российской Федерации или законом, для осуществления и выполнения возложенных законодательством Российской Федерации на оператора функций, полномочий и обязанностей; </li>
+                            <li>обработка персональных данных необходима для осуществления правосудия, исполнения судебного акта, акта другого органа или должностного лица, подлежащих исполнению в соответствии с законодательством Российской Федерации об исполнительном производстве; </li>
+                            <li>обработка персональных данных необходима для исполнения договора, стороной которого либо выгодоприобретателем или поручителем по которому является субъект персональных данных, а также для заключения договора по инициативе субъекта персональных данных или договора, по которому субъект персональных данных будет являться выгодоприобретателем или поручителем; </li>
+                            <li>обработка персональных данных необходима для защиты жизни, здоровья или иных жизненно важных интересов клиента, если получение его согласия невозможно; </li>
+                            <li>обработка персональных данных необходима для осуществления прав и законных интересов оператора или третьих лиц либо для достижения общественно значимых целей при условии, что при этом не нарушаются права и свободы субъекта персональных данных; </li>
+                            <li>осуществляется обработка персональных данных, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных либо по его просьбе; </li>
+                            <li>осуществляется обработка персональных данных, подлежащих опубликованию или обязательному раскрытию в соответствии с федеральным законом.</li> 
+                        </ul> 
+                        <p>3.4. Общество производит обработку персональных данных клиентов в следующих целях: </p>
+                        <ul class="legal-list">    
+                            <li>регистрация и авторизация клиентов на Сайте; </li>
+                            <li>обработка заказов клиентов и осуществление доставки товаров; </li>
+                            <li>исполнение Обществом и/или его партнерами своих обязательств перед клиентами, </li>
+                            <li>осуществление деятельности по продвижению товаров, представленных на Сайте; </li>
+                            <li>авторизация клиентов на Форуме, расположенном на Сайте; </li>
+                            <li>оценка и анализ работы Сайта; </li>
+                            <li>определение победителя в акциях, проводимых Обществом на Сайте; </li>
+                            <li>участие клиентов в бонусной программе; </li>
+                            <li>анализ покупательских особенностей клиентов и предоставление им персональных рекомендаций; </li>
+                            <li>осуществление рассылок об акциях, скидках и специальных предложениях посредством электронной почты и/или SMS-сообщений (только в том случае, если клиент даст на это разрешение в процессе регистрации на Сайте) и технических сообщений на адрес указанной клиентом электронной почты и/или номер мобильного телефона. </li>
+                        </ul>    
+                        <p>
+                            3.5. Клиенты принимают решение о предоставлении своих персональных данных и дают согласие на их обработку свободно, своей волей и в своем интересе. Согласие на обработку персональных данных может быть дано самим субъектом персональных данных или его представителем в любой позволяющей подтвердить факт его получения форме, если иное не установлено федеральным законом. 
+                        </p>
+                        <p>    
+                            3.6. Общество вправе поручить обработку персональных данных клиентов третьим лицам, на основании заключаемого с этими лицами договора. 
+                        </p>
+                        <p>    
+                            Лица, осуществляющие обработку персональных данных по поручению Общества (далее – Партнеры Общества), обязуются соблюдать принципы и правила обработки и защиты персональных данных, предусмотренные Федеральным законом «О персональных данных» и настоящим Положением. 
+                        </p>
+                        <p>    
+                            Для каждого Партнера Общества определены перечень действий (операций) с персональными данными, которые будут совершаться Партнером, осуществляющим обработку персональных данных, цели обработки, установлена обязанность соблюдать конфиденциальность и обеспечивать безопасность персональных данных при их обработке, а также указаны требования к защите обрабатываемых персональных данных. 
+                        </p>
+                        <p>    
+                            3.7. Общество уничтожает либо обезличивает персональные данные по достижении целей обработки или в случае утраты необходимости достижения цели обработки. 
+                        </p>
+                        <p>    
+                            3.8. Клиенты представляют Обществу достоверные сведения о себе. 
+                        </p>
+                        <p>    
+                            3.9. К обработке персональных данных клиентов могут иметь доступ только те сотрудники Общества, которые допущены к работе с персональными данными и которые подписали Соглашение о неразглашении персональных данных клиентов. 
+                        </p>
+                        <p>    
+                            3.10. Обработка персональных данных клиентов Общества может осуществляться исключительно в целях, установленных настоящим Положением, и с соблюдением действующего законодательства в области персональных данных. 
+                        </p>
+                        <p>    
+                            3.11. При определении объема и содержания, обрабатываемых персональных данных Общество руководствуется Конституцией Российской Федерации, законом о персональных данных, и иными федеральными законами. 
+                        </p>
+                        <p>    
+                            4. Доступ к персональным данным клиентов, условия хранения персональных данных <br>
+                            4.1. Право доступа к персональным данным клиентов имеют только работники Общества, непосредственно осуществляющие обработку таких данных, и ознакомленные Обществом с положениями законодательства Российской Федерации о персональных данных, в том числе требованиями к защите персональных данных, документами, определяющими политику Общества в отношении обработки персональных данных, локальными актами по вопросам обработки персональных данных. 
+                        </p>
+                        <p>    
+                            4.2. Хранение персональных данных клиентов осуществляется на электронных, а так же, при необходимости, на бумажных носителях. 
+                        </p>
+                        <p>    
+                            4.3. Помещения, в которых хранятся персональные данные клиентов, оборудуются запирающими устройствами. Доступ к ЭВМ, на которых осуществляется обработка персональных данных, находится под защитой паролей. 
+                        </p>
+                        <p>    
+                            4.4. Общество принимает технические и организационно-правовые меры в целях обеспечения защиты персональных данных клиентов от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий, в том числе, но не ограничиваясь: 
+                        </p>
+                        <ul class="legal-list">    
+                            <li>антивирусная защита; </li>
+                            <li>обнаружение и предотвращение вторжений; </li>
+                            <li>управления доступом; </li>
+                            <li>регистрация и учет; </li>
+                            <li>обеспечение целостности персональных данных. </li>
+                        </ul>    
+                        <p>4.5. Права клиентов при обработке персональных данных: </p>
+                        <ul class="legal-list">
+                            <li>получать доступ к своим персональным данным и ознакомление с ними, включая право на безвозмездное получение копии любой записи, содержащей его персональные данные; </li>
+                            <li>требовать от Общества уточнения, блокирования или уничтожения неполных, неверных, устаревших, недостоверных, незаконно полученных или не являющихся необходимыми для Общества персональных данных; </li>
+                            <li>обжаловать в уполномоченный орган по защите прав субъектов персональных данных или в судебном порядке неправомерные действия или бездействия Общества при обработке и защите его персональных данных; </li>
+                            <li>получать от Общества информацию, касающуюся обработки его персональных данных, в том числе содержащей: </li>
+                            <li>подтверждение факта обработки персональных данных Обществом; </li>
+                            <li>правовые основания и цели обработки персональных данных; </li>
+                            <li>цели и применимые Обществом способы обработки персональных данных; </li>
+                            <li>наименование и место нахождения Общества, сведения о лицах (за исключением работников Общества), которые имеют доступ к персональным данным или которым могут быть раскрыты данные на основании договора с Обществом или на основании федерального закона; </li>
+                            <li>обрабатываемые персональные данные, относящиеся к соответствующему субъекту персональных данных, источник их получения, если иной порядок представления таких данных не предусмотрен федеральным законом; </li>
+                            <li>сроки обработки персональных данных, в том числе сроки их хранения; </li>
+                            <li>порядок осуществления субъектом персональных данных прав, предусмотренных федеральным законом; </li>
+                            <li class="mb-20">наименование или фамилию, имя, отчество и адрес лица, осуществляющего обработку персональных данных по поручению Общества, если обработка поручена или будет поручена такому лицу; </li>
+
+                            <li>иные, предусмотренные законодательством сведения. </li>
+                        </ul>
+                        <p>5. Ответственность за нарушение норм, регулирующих обработку персональных данных <br>
+                           5.1. Работники Общества, виновные в нарушении порядка обращения с персональными данными, несут ответственность в соответствии с действующим законодательством Российской Федерации. 
+                        </p>
+                        <p>   
+                            6. Заключительные положения <br>
+                            6.1. Настоящее Положение является общедоступным документов, с содержанием которого вправе ознакомиться физические лица, вступающие в договорные отношения с Обществом. 
+                        </p>
+                        <p>    
+                            6.2. Настоящее Положение вступает в силу с момента его подписания Руководителем Общества и действует бессрочно, до замены его новым Положением.</p>    
+                </div>
+                <div class="text-center">
+                    <a href="/" class="btn btn_submit pl-60 pr-60 mt-35 hidden-xs hidden-sm">Понятно</a>
+                    <a href="/" class="btn btn_submit pl-30 pr-30 mt-10 hidden-xl hidden-lg hidden-md">Хорошо, понятно</a>
+                </div>    
+            </div> 
+        </section>
+        <footer class="footer footer_legal">
+            <div class="container container-flex container-flex_align-items_flex-end pt-25-lg pt-10-xs pb-25-lg pb-20-xs">
+                <div class="footer-top mb-20-lg mb-20-xs hidden">    
+                    <div class="footer-socio">
+                        <a class="footer-socio__link"><img src="images/viber.png" alt=""></a>
+                        <a class="footer-socio__link" href=""><img src="images/vk.png" alt=""></a>
+                        <a class="footer-socio__link"><img src="images/insta.png" alt=""></a>
+                    </div>
+                    <div class="footer-logo">
+                        <a class="footer__logo" href="/">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-right">
+                        <p class="footer__phone"><a href="tel:+79603721930">+7 960 372 19 30</a><br>
+                        <span class="hidden-xs">+7 903 320 65 61</span></p>
+                        <a class="footer__link hidden-sm hidden-xs">Заказать обратный звонок</a>
+                        <a class="footer__link hidden-md hidden-lg hidden-xl">Обратный звонок</a>
+                    </div>   
+                </div> 
+                <div class="footer-card footer-card_legal mb-15-xs mb-0-md">
+                    <div class="footer-card__item footer-card__item_legal">
+                        <img class="footer-card__img" src="images/visa.png" alt="">
+                    </div>
+                    <div class="footer-card__item footer-card__item_legal">
+                        <img class="footer-card__img" src="images/mastercard.png" alt="">
+                    </div>
+                    <div class="footer-card__item footer-card__item_legal">
+                        <img class="footer-card__img" src="images/mir.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-bottom footer-bottom_legal">
+                    <div class="footer-bottom__item">ИП Юнусов Н.А.</div>
+                    <div class="footer-bottom__item">ОГРНИП 314732528300029</div>
+                    <div class="footer-bottom__item">ИНН 732500620886</div>        
+                </div> 
+                <div class="footer-bottom__item footer-bottom__item_width footer-bottom_legal_right">Разработано 
+                    <a class="footer-bottom__link" href="http://htdev.ru">HTDev</a>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="h4 mb-30">Товар добавлен в корзину</div>
+                <a class="popup__link popup__link_close" href="#">Продолжить покупки</a>
+                <a class="popup__link mt-20" href="/cart.html">Оформить заказ</a>
+            </div>
+        </footer> 
+        <script src="main.js"></script> 
+    </body>
+</html>

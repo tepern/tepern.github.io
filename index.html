@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Азалия</title> 
+        <link rel='stylesheet' href='lib.css'>
+        <link rel='stylesheet' href='main.css'>
+        <script src="./src/lib/jquery.min.3.3.1.js"></script>
+        <script src="lib.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container container-flex header-container hidden-lg hidden-md hidden-sm hidden-xs">
+                <div class="header-left">
+                    <button class="header__btn">Каталог</button>
+                    <div class="header-catalog">
+                        <p class="header-catalog__title">Каталог<button class="header-catalog__close btn"></button></p>
+                        <div class="header-catalog-list">
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Букеты до 2500</a>
+                                </li>
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Лидеры продаж</a>
+                                </li>
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Воздушные шары</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Букеты</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Выпускной</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Любимой</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">С Днем Рождения</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Свидание</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Юбилей</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">14 февраля</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">На свадьбу</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Коллеге</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Мужчине</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Цветы</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Монобукеты</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Цветочные композиции</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Свадебная флористика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-cart">Корзина:<a class="header-cart__link" href="cart.html">3 товара</a></div>
+                </div>
+                <div class="header-logo">
+                    <a class="header__logo" href="/">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="header-socio">
+                        <a class="header-socio__link"><img src="images/viber.png" alt="viber"></a>
+                        <a class="header-socio__link" href=""><img src="images/vk.png" alt="vk"></a>
+                        <a class="header-socio__link"><img src="images/insta.png" alt="insta"></a>
+                    </div>
+                    <p class="header__phone">+7 960 372 19 30<br>
+                    +7 903 320 65 61</p>
+                    <a class="header__link">Заказать обратный звонок</a>
+                    <div class="call-request">
+                        <form class="call-request-form" name="call-request">
+                            <button type="button" class="call-request__close"></button>
+                            <div class="call-request-form-content">
+                                <div class="call-request__title text-center">Заказать<br>обратный звонок</div>
+                                <div class="call-request__item">
+                                    <input type="text" name="user-name" class="call-request__input" placeholder="Имя">
+                                </div>
+                                <div class="call-request__item">
+                                    <input type="text" name="user-phone" class="call-request__input" placeholder="Контактный телефон*">
+                                </div>
+                                <div class="call-request__item pl-25">
+                                    <input id="legal" name="legal" type="checkbox" class="call-request__checkbox" checked required>
+                                    <label class="call-request__label" for="legal">Даю согласие на передачу и обработку своих персональных данных</label>
+                                </div>
+                                <div class="call-request__item text-center">
+                                    <button type="submit" name="web_form_submit" class="btn btn_small call-request__btn mt--5 mb-15">Заказать звонок</button>
+                                </div>
+                            </div>
+                            <div class="call-request-form-success">
+                                <div class="call-request__title text-center mb-20">Спасибо за заявку!</div>
+                                <p class="call-request__text text-center mb-20">В ближайшее время мы с вами<br>свяжемся для уточнения деталей</p>
+                                <div class="call-request__item text-center">
+                                    <button type="button" class="btn btn_small call-request__btn call-request__btn_success">Спасибо, ожидаю</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile header-mobile_top container header-container">
+                <div class="header-mobile__left">
+                    <button class="header-mobile__btn">Каталог</button>
+                </div>
+                <div class="header-mobile__right">
+                    <a class="header-mobile__cart" href="cart.html">0</a>
+                </div>
+            </div>
+            <div class="header-mobile header-mobile_bottom">
+                <div class="header-socio">
+                    <a class="header-socio__link"><img src="images/viber.png" alt="viber"></a>
+                    <a class="header-socio__link" href=""><img src="images/vk.png" alt="vk"></a>
+                    <a class="header-socio__link"><img src="images/insta.png" alt="insta"></a>
+                </div>
+                <div class="header-mobile-logo">
+                    <a class="header__logo" href="/">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header-mobile__right">
+                    <a class="header-mobile__phone" href="tel:+79603721930">+7 960 372 19 30</a>
+                    <a class="header-mobile__link">Обратный звонок</a>
+                    <div class="call-request">
+                        <form class="call-request-form" name="call-request">
+                            <button type="button" class="call-request__close"></button>
+                            <div class="call-request-form-content">
+                                <div class="call-request__title text-center">Заказать<br>обратный звонок</div>
+                                <div class="call-request__item">
+                                    <input type="text" name="user-name" class="call-request__input" placeholder="Имя">
+                                </div>
+                                <div class="call-request__item">
+                                    <input type="text" name="user-phone" class="call-request__input" placeholder="Контактный телефон*">
+                                </div>
+                                <div class="call-request__item pl-25">
+                                    <input id="agreement" name="agreement" type="checkbox" class="call-request__checkbox" checked required>
+                                    <label class="call-request__label" for="agreement">Даю согласие на передачу и обработку своих персональных данных</label>
+                                </div>
+                                <div class="call-request__item text-center">
+                                    <button type="submit" name="web_form_submit" class="btn btn_small call-request__btn mt--5 mb-15">Заказать звонок</button>
+                                </div>
+                            </div>
+                            <div class="call-request-form-success">
+                                <div class="call-request__title text-center mb-20">Спасибо за заявку!</div>
+                                <p class="call-request__text text-center mb-20">В ближайшее время мы с вами свяжемся для уточнения деталей</p>
+                                <div class="call-request__item text-center">
+                                    <button type="button" class="btn btn_small call-request__btn call-request__btn_success">Спасибо, ожидаю</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="header-catalog">
+                        <p class="header-catalog__title"><button class="header-catalog__close header-catalog__close_mobile btn"></button>Каталог</p>
+                        <div class="header-catalog-list">
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Букеты до 2500</a>
+                                </li>
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Лидеры продаж</a>
+                                </li>
+                                <li class="header-catalog__item header-catalog__item_group">
+                                    <a class="header-catalog__link header-catalog__link_group">Воздушные шары</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group mb-0-sm mb-5-xs mt-0-sm mt-5-xs">
+                                    <a class="header-catalog__link header-catalog__link_group">Букеты</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Выпускной</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Любимой</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">С Днем Рождения</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Свидание</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Юбилей</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">14 февраля</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">На свадьбу</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Коллеге</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Мужчине</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group mb-0-sm mb-5-xs mt-0-sm mt-5-xs">
+                                    <a class="header-catalog__link header-catalog__link_group">Цветы</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Монобукеты</a>
+                                </li>
+                                <li class="header-catalog__item">
+                                    <a class="header-catalog__link">Цветочные композиции</a>
+                                </li>
+                            </ul>
+                            <ul class="header-catalog-group">
+                                <li class="header-catalog__item header-catalog__item_group mb-0-sm mb-5-xs mt-0-sm mt-5-xs">
+                                    <a class="header-catalog__link header-catalog__link_group">Свадебная флористика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <section class="section section_banner">
+            <div class="container">
+                <div class="row row-mobile">
+                    <div class="col-lg-5 col-md-5 col-sm-7 col-xs-7">
+                        <blockquote class="ml--5">Радуем Вас с 2005 года</blockquote>
+                        <h1 class="h1 mt-45-lg mt-0-xs mb-50-lg mb-15-xs ml--5">Доставка цветов в Ульяновске</h1>
+                        <p class="banner__text mr-50-lg ml--5">Бесплатно доставим их в любой район города при покупке от 1 000 руб.</p>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-5 col-xs-5"></div>
+                    <div class="col-lg-10 col-xs-12">
+                        <a class="btn banner__btn mt-60-lg mt-20-xs ml--5" href="#catalog">Подобрать лучший букет</a>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="section section_infg pb-100-md">
+            <div class="container text-center">
+                <h2 class="h2 mt-5-lg mb-20-lg mb--10-xs">Наши преимущества</h2>
+                <p class="infg-title text-center">Заказав у нас цветы однажды, вы будете заказывать их только у нас</p>
+                <div class="infg">
+                    <a class="infg__item">
+                        <div class="infg__img infg__img_small">
+                            <img src="images/moto-icon.png" alt="">
+                        </div>
+                        <div class="infg__text">Безопасная доставка во все районы города</div>
+                    </a>
+                    <a class="infg__item">
+                        <div class="infg__img">
+                            <img src="images/camera-icon.png" alt="">
+                        </div>
+                        <div class="infg__text">Фотографируем каждый букет перед отправкой</div>            
+                    </a>
+                    <a class="infg__item">
+                        <div class="infg__img">
+                            <img src="images/iphone-icon.png" alt="">
+                        </div>
+                        <div class="infg__text">Удобное оформление заказа в пару кликов</div>
+                    </a>
+                    <a class="infg__item">
+                        <div class="infg__img">
+                            <img src="images/clock-icon.png" alt="">
+                        </div>
+                        <div class="infg__text">Минимальные сроки доставки от 1 часа</div>
+                    </a>
+                    <a class="infg__item">
+                        <div class="infg__img">
+                            <img src="images/flowers-icon.png" alt="">
+                        </div>
+                        <div class="infg__text">Букеты от 500 рублей</div>
+                    </a>
+                    <a class="infg__item">
+                        <div class="infg__img">
+                            <img src="images/ok-icon.png" alt="">
+                        </div>
+                        <div class="infg__text">Приятные бонусы и скидки постоянным клиентам</div>
+                    </a>
+                </div>
+                <a class="btn mt-15-lg mt-20-xs" href="#catalog">Посмотреть каталог букетов и цветов</a>
+            </div>
+            <div class="section_padding offer">
+                <h2 class="h2 text-center mt-105-lg mt-5-xs mb-70-lg mb-0-xs mr-0-md mr--10-xs ml-0-md ml--10-xs">У нас вы можете заказать</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <a href="">
+                            <img src="images/1.jpg" alt="">
+                            <p class="title mt-20-lg mt-15-xs mb-20-lg mb-15-xs text-center">Свадебные букеты</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <a href="">
+                            <img src="images/2.jpg" alt="">
+                            <p class="title mt-20-lg mt-15-xs mb-20-lg mb-15-xs text-center">Авторские букеты</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <a href="">
+                            <img src="images/3.jpg" alt="">
+                            <p class="title mt-20-lg mt-15-xs mb-20-lg mb-15-xs text-center">Моно букеты</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <a href="">
+                            <img src="images/4.jpg" alt="">
+                            <p class="title mt-20-lg mt-15-xs mb-20-lg mb-15-xs text-center">Воздушные шарики</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_padding section_catalog mb-60-lg mt-0-sm mt--65-xs ">
+            <div class="h3 catalog-title mt-125-lg mt-50-md mt-50-sm mt-45-xs">Наши цветы<br>стоят минимум<br>5 дней</div>
+            <div class="catalog pt-120-lg text-center">
+                <a name="catalog"></a>
+                <h2 class="h2 mt-145-lg mt-150-md mt-35-sm mt-30-xs mb-0-lg">Каталог</h2>
+                <div class="container">
+                    <ul class="catalog-nav">
+                        <li class="catalog-nav__item">
+                            <a class="catalog-nav__link">Букеты до 2500</a>
+                        </li>
+                        <li class="catalog-nav__item">
+                            <a class="catalog-nav__link">Лидеры продаж</a>
+                        </li>
+                        <li class="catalog-nav__item">
+                            <a class="catalog-nav__link">Воздушные шары</a>
+                        </li>
+                        <li class="catalog-nav__item catalog-filter">
+                            <a class="catalog-nav__link catalog-filter__link">Букеты</a>
+                            <div class="catalog-filter-group">
+                                <form name="filter" class="catalog-filter-form catalog-filter-form_event">
+                                    <button type="button" class="catalog-filter__close"></button>
+                                    <ul class="catalog-filter-list">
+                                        <li class="catalog-filter__item">
+                                            <input id="vypusknoy" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="Выпускной">
+                                            <label class="catalog-filter__label" for="vypusknoy">Выпускной</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="lubimoy" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="Любимой">
+                                            <label class="catalog-filter__label" for="lubimoy">Любимой</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="birthday" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="С Днем Рождения">
+                                            <label class="catalog-filter__label" for="birthday">С Днем Рождения</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="svidanie" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="Свидание">
+                                            <label class="catalog-filter__label" for="svidanie">Свидание</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="jubiley" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="Юбилей">
+                                            <label class="catalog-filter__label" for="jubiley">Юбилей</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="february14" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="14 февраля">
+                                            <label class="catalog-filter__label" for="february14">14 февраля</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="marriage" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="На свадьбу">
+                                            <label class="catalog-filter__label" for="marriage">На свадьбу</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="colleague" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="Коллеге">
+                                            <label class="catalog-filter__label" for="colleague">Коллеге</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="man" name="event[]" type="checkbox" class="catalog-filter__checkbox" value="Мужчине">
+                                            <label class="catalog-filter__label" for="man">Мужчине</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="catalog-nav__item catalog-filter">
+                            <a class="catalog-nav__link catalog-filter__link">Цветы</a>
+                            <div class="catalog-filter-group">
+                                <form class="catalog-filter-form catalog-filter-form_type">
+                                    <button type="button" class="catalog-filter__close"></button>
+                                    <ul class="catalog-filter-list">
+                                        <li class="catalog-filter__item">
+                                            <input id="mono" name="bouquet[]" type="checkbox" class="catalog-filter__checkbox" value="Монобукеты">
+                                            <label class="catalog-filter__label" for="mono">Монобукеты</label>
+                                        </li>
+                                        <li class="catalog-filter__item">
+                                            <input id="composition" name="bouquet[]" type="checkbox" class="catalog-filter__checkbox" value="Цветочные композиции">
+                                            <label class="catalog-filter__label" for="composition">Цветочные композиции</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="catalog-nav__item">
+                            <a class="catalog-nav__link">Свадебная флористика</a>
+                        </li>
+                    </ul>
+                    <div class="catalog-filter-reset visible-md visible-sm visible-xs">
+                        <button type="reset" class="catalog-filter__reset">Сбросить фильтр</button>
+                    </div>    
+                </div>
+                <div class="product">
+                    <div class="product__item">
+                        <a class="product__img">
+                            <img src="images/5.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                    <div class="product__item">
+                        <a class="product__img">
+                            <img src="images/6.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price"><span class="price price_old">1 360 руб.</span>860 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                    <div class="product__item">
+                        <a class="product__img">
+                            <img src="images/7.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                    <div class="product__item hidden-xs">
+                        <a class="product__img">
+                            <img src="images/8.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                    <div class="product__item hidden-xs">
+                        <a class="product__img">
+                            <img src="images/9.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                    <div class="product__item hidden-xs">
+                        <a class="product__img">
+                            <img src="images/10.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                    <div class="product__item hidden-xs">
+                        <a class="product__img">
+                            <img src="images/11.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                    <div class="product__item hidden-xs">
+                        <a class="product__img">
+                            <img src="images/12.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div> 
+                    <div class="product__item hidden-xs">
+                        <a class="product__img">
+                            <img src="images/13.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                    <div class="product__item hidden-xs">
+                        <a class="product__img">
+                            <img src="images/14.jpg" alt="">
+                        </a>
+                        <div class="product__title">Букет из кустовых роз</div>
+                        <div class="price">2 600 руб.</div>
+                        <p class="text">Состав: 25 белых орхидей, 20 белых эустом</p>
+                        <p class="text">Высота букета: 40-50 см</p>
+                        <button class="btn btn_small product-btn">Добавить в корзину</button>
+                    </div>
+                </div>
+                <button class="product__btn btn mt-25-lg mt-15-xs">Показать еще 24 букета</button>
+                <ul class="pagination">
+                    <li class="pagination__item pagination__item_current">
+                        <a href="" class="pagination__link pagination__link_active">1</a></li>
+                    <li class="pagination__item">
+                        <a href="" class="pagination__link">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="" class="pagination__link">4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="" class="pagination__link">5</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="" class="pagination__link">...</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="" class="pagination__link">12</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section section_padding_bottom section_quiz mb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-xs-12">
+                        <h2 class="h2 quiz-title mb-55-lg mb-25-xs mr-0-lg mr-25-xs ml-0-lg ml-25-xs mt-10-xs mt-0-md">Не знаете какой<br>букет выбрать ?</h2>
+                        <p class="quiz__text mr-80-lg mr-25-xs ml-0-lg ml-25-xs mt--10-xs mt-0-sm">
+                            Мы подберем для вас 5 вариантов букетов, Вам нужно только ответить на вопросы
+                        </p>
+                    </div>
+                    <div class="col-lg-1 hidden-md hidden-sm hidden-xs"></div>
+                    <div class="col-lg-6 col-xs-12">
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="quiz">
+                <form class="quiz-form">
+                    <div class="quiz-slide">
+                        <div class="quiz__title mb-40-lg mb-15-xs">Кому вы хотите подарить букет?</div>
+                        <div class="quiz-group">
+                            <div class="quiz__item mb-30-lg mb-15-xs ml-5-xs ml-0-lg">
+                                <input type="radio" class="quiz__radio" id="male" name="sex" value="Мужчине">
+                                <label class="quiz__label" for="male">Мужчине
+                                    <img class="quiz__img" src="images/male-icon.png" alt="">
+                                </label>  
+                            </div>
+                            <div class="quiz__item mb-0-lg mb-15-xs">
+                                <input type="radio" class="quiz__radio" id="female" name="sex" value="Женщине">
+                                <label class="quiz__label" for="female">Женщине
+                                    <img class="quiz__img" src="images/female.png" alt="">
+                                </label>  
+                            </div>                                        
+                        </div>
+                        <div class="quiz-footer">
+                            <button class="btn quiz__btn" type="button">Следующий вопрос</button>
+                            <div>
+                                <span class="quiz__number quiz__number_current">01</span>
+                                <span class="quiz__number">/05</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="section section_review">
+            <div class="container">
+                <div class="row row-mobile">
+                    <h2 class="h2 mb-40-lg mb-20-xs mt--10-lg mt-25-xs text-center">Отзывы клиентов</h2>
+                    <div class="review">
+                        <div class="review__item">
+                            <img class="review__img" src="images/review1.png" alt="">
+                        </div>
+                        <div class="review__item">
+                            <img class="review__img" src="images/review2.png" alt="">
+                        </div>
+                        <div class="review__item">
+                            <img class="review__img" src="images/review3.png" alt="">
+                        </div>
+                        <div class="review__item">
+                            <img class="review__img" src="images/review1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container container">
+                <div class="footer-top mb-20-lg mb-20-xs">    
+                    <div class="footer-socio">
+                        <a class="footer-socio__link"><img src="images/viber.png" alt=""></a>
+                        <a class="footer-socio__link" href=""><img src="images/vk.png" alt=""></a>
+                        <a class="footer-socio__link"><img src="images/insta.png" alt=""></a>
+                    </div>
+                    <div class="footer-logo">
+                        <a class="footer__logo" href="/">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-right">
+                        <p class="footer__phone"><a href="tel:+79603721930">+7 960 372 19 30</a><br>
+                        <span class="hidden-xs">+7 903 320 65 61</span></p>
+                        <a class="footer__link hidden-sm hidden-xs">Заказать обратный звонок</a>
+                        <a class="footer__link hidden-md hidden-lg hidden-xl">Обратный звонок</a>
+                    </div>   
+                </div> 
+                <div class="footer-card mb-30-lg mb-30-sm mb-15-xs">
+                    <div class="footer-card__item">
+                        <img class="footer-card__img" src="images/visa.png" alt="">
+                    </div>
+                    <div class="footer-card__item">
+                        <img class="footer-card__img" src="images/mastercard.png" alt="">
+                    </div>
+                    <div class="footer-card__item">
+                        <img class="footer-card__img" src="images/mir.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__item">ИП Юнусов Н.А.</div>
+                    <div class="footer-bottom__item">ОГРНИП 314732528300029</div>
+                    <div class="footer-bottom__item">ИНН 732500620886</div>
+                    <div class="footer-bottom__item footer-bottom__item_width">Разработано 
+                        <a class="footer-bottom__link" href="http://htdev.ru">HTDev</a>
+                    </div>        
+                </div> 
+            </div>
+            <div class="popup">
+                <div class="h4 popup-title mb-30-lg mb-20-xs pl-0-sm pr-0-sm pl-20-xs pr-20-xs">Товар добавлен в корзину</div>
+                <a class="popup__link popup__link_close" href="#">Продолжить покупки</a>
+                <a class="popup__link mt-20-lg mt-10-xs" href="/cart.html">Оформить заказ</a>
+            </div>
+        </footer> 
+        <script src="main.js"></script> 
+    </body>
+</html>
